@@ -720,6 +720,58 @@
 <rectangle x1="23.241" y1="26.416" x2="23.749" y2="26.924" layer="51" rot="R90"/>
 <rectangle x1="25.781" y1="26.416" x2="26.289" y2="26.924" layer="51" rot="R90"/>
 </package>
+<package name="8X2_SMD_HEADER">
+<smd name="1" x="-8.89" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="2" x="-6.35" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="3" x="-3.81" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="5" x="1.27" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="6" x="3.81" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="7" x="6.35" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="8" x="8.89" y="3.325" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="9" x="8.89" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="10" x="6.35" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="11" x="3.81" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="12" x="1.27" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="13" x="-1.27" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="14" x="-3.81" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="15" x="-6.35" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<smd name="16" x="-8.89" y="-3.175" dx="4.8" dy="0.89" layer="1" rot="R90"/>
+<wire x1="-15" y1="4.5" x2="-9.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-15" y1="-4.5" x2="-9.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="9.5" y1="-4.5" x2="15" y2="-4.5" width="0.127" layer="21"/>
+<text x="-12.065" y="-6.35" size="1.27" layer="21" font="vector">16</text>
+<text x="-9.525" y="6.35" size="1.27" layer="21" font="vector" rot="R180">VCC</text>
+<text x="10.795" y="-6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="15" y1="4.5" x2="9.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="15" y1="-4.5" x2="15" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-15" y1="4.5" x2="-15" y2="-4.5" width="0.127" layer="21"/>
+</package>
+<package name="8X2_THROUGH_HOLE_HEADER">
+<text x="-12.065" y="-6.35" size="1.27" layer="21" font="vector">16</text>
+<text x="-9.525" y="6.35" size="1.27" layer="21" font="vector" rot="R180">VCC</text>
+<text x="10.795" y="-6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="14" y1="-4.6" x2="14" y2="4.6" width="0.127" layer="21"/>
+<wire x1="-14" y1="4.6" x2="-14" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-14" y1="-4.6" x2="14" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="14" y1="4.6" x2="-14" y2="4.6" width="0.127" layer="21"/>
+<pad name="1" x="-8.89" y="1.27" drill="1" shape="square"/>
+<pad name="2" x="-6.35" y="1.27" drill="1"/>
+<pad name="3" x="-3.81" y="1.27" drill="1"/>
+<pad name="4" x="-1.27" y="1.27" drill="1"/>
+<pad name="5" x="1.27" y="1.27" drill="1"/>
+<pad name="6" x="3.81" y="1.27" drill="1"/>
+<pad name="7" x="6.35" y="1.27" drill="1"/>
+<pad name="8" x="8.89" y="1.27" drill="1"/>
+<pad name="9" x="8.89" y="-1.27" drill="1"/>
+<pad name="10" x="6.35" y="-1.27" drill="1"/>
+<pad name="11" x="3.81" y="-1.27" drill="1"/>
+<pad name="12" x="1.27" y="-1.27" drill="1"/>
+<pad name="13" x="-1.27" y="-1.27" drill="1"/>
+<pad name="14" x="-3.81" y="-1.27" drill="1"/>
+<pad name="15" x="-6.35" y="-1.27" drill="1"/>
+<pad name="16" x="-8.89" y="-1.27" drill="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="7443331000_SY">
@@ -888,6 +940,30 @@
 <pin name="GPIO2_9" x="35.56" y="-5.08" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="GPIO2_6" x="-20.32" y="-7.62" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="GPIO2_7" x="35.56" y="-7.62" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="16_PIN_CONNECTOR">
+<pin name="8" x="-7.62" y="-7.62" length="short"/>
+<pin name="7" x="-7.62" y="-5.08" length="short"/>
+<pin name="6" x="-7.62" y="-2.54" length="short"/>
+<pin name="5" x="-7.62" y="0" length="short"/>
+<pin name="4" x="-7.62" y="2.54" length="short"/>
+<pin name="3" x="-7.62" y="5.08" length="short"/>
+<pin name="2" x="-7.62" y="7.62" length="short"/>
+<pin name="1" x="-7.62" y="10.16" length="short"/>
+<pin name="16" x="7.62" y="10.16" length="short" rot="R180"/>
+<pin name="15" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="14" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="13" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="12" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="11" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="10" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="9" x="7.62" y="-7.62" length="short" rot="R180"/>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<text x="-5.08" y="-12.7" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="13.97" size="1.778" layer="94" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1062,6 +1138,66 @@
 <connect gate="G$1" pin="VDD_5V@1" pad="P9_5"/>
 <connect gate="G$1" pin="VDD_5V@2" pad="P9_6"/>
 <connect gate="G$1" pin="VDD_ADC" pad="P9_32"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="75869-103LF">
+<gates>
+<gate name="G$1" symbol="16_PIN_CONNECTOR" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="8X2_THROUGH_HOLE_HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3020-16-0300-00">
+<gates>
+<gate name="G$1" symbol="16_PIN_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8X2_SMD_HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
